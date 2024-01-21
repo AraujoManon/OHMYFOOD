@@ -1,3 +1,4 @@
+// Mixin ::
 @mixin title {
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -15,10 +16,12 @@
   margin-left: 23px;
 }
 
+// Variable :
 $purple: var(--Primary, #9356dc);
 
 $grey: var(--Grey-Tint4, #7e7e7e);
 
+// Début du code :
 .fonctionnement {
   display: flex;
   flex-direction: column;

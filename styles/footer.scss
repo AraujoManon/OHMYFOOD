@@ -1,3 +1,4 @@
+// Mixin :
 @mixin style-text {
   color: var(--White, #fff);
   font-family: Roboto;
@@ -5,6 +6,7 @@
   margin: 0;
 }
 
+// Début du code :
 footer {
   background-color: #353535;
   padding: 22px 25px;

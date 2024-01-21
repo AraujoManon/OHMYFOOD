@@ -1,5 +1,6 @@
-// header + partie h1 "Réservez le menu..." ...
+// Header + partie h1 "Réservez le menu..." ...
 
+// Mixin :
 @mixin write {
   font-family: "Roboto", sans-serif;
   color: var(--Grey, #353535);
@@ -10,6 +11,7 @@
   color: #000;
 }
 
+// Header:
 body {
   margin: 0%;
 }
@@ -51,6 +53,7 @@ header > img {
   }
 }
 
+// Partie h1 "Réservez le menu...":
 .intro {
   background: var(--Background, #f6f6f6);
   display: flex;
@@ -89,7 +92,4 @@ header > img {
     font-family: Roboto;
     margin-bottom: 57px;
   }
-}
-.fa-solid :active {
-  color: #ff79da;
 }

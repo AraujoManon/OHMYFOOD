@@ -1,3 +1,4 @@
+// Mixin :
 @mixin title {
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -56,25 +57,31 @@
   align-items: baseline;
 }
 
+// Variable :
 $purple: var(--Primary, #9356dc);
 
 $light-grey: var(--Background, #f6f6f6);
 
+// Début du code
 .cards {
   padding: 54px 17px 66px 18px;
   display: flex;
-  gap: 18px;
   flex-direction: column;
   background-color: $light-grey;
 
   & h2 {
     display: flex;
-    margin: 0;
+    margin: 0px 0px 20px 0px;
     font-size: 24px;
     font-weight: 700;
     @include title;
   }
 
+  & .rank-cards {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+  }
   & article {
     height: 251px;
     width: 340px;
