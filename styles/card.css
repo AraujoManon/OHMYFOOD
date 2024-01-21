@@ -1,0 +1,111 @@
+.cards {
+  padding: 54px 20px 66px 20px;
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  background-color: var(--Background, #f6f6f6);
+}
+.cards h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.cards article {
+  height: 251px;
+  width: 340px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.cards a {
+  text-decoration: none;
+}
+.cards img {
+  width: 100%;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.cards h3 {
+  margin: 0;
+  display: flex;
+  position: relative;
+  top: -160px;
+  left: 226px;
+  color: var(--Green-Font, #008766);
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  background: var(--Green, #99e2d0);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 80px;
+  margin: 0;
+  padding: 9px 7px;
+}
+.cards p {
+  margin: -20px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom .card-word {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.card-bottom h4 {
+  margin: 16px 0px 5px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.card-bottom p {
+  margin: 0px 0px 12px 13px;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+.card-bottom-2 {
+  margin-top: -40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom-2 .card-word-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.card-bottom-2 h4 {
+  margin: 16px 0px 5px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.card-bottom-2 p {
+  margin: 0px 0px 12px 13px;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+.cards button {
+  background-color: #fff;
+  border: 0px;
+  padding-right: 21px;
+  display: flex;
+}/*# sourceMappingURL=card.css.map */
