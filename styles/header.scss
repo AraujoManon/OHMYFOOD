@@ -40,12 +40,6 @@ header > img {
   background-color: rgba(234, 234, 234, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-  &.fa-solid {
-    width: 12px;
-    height: 16px;
-    @include write;
-  }
-
   & p {
     font-size: 16px;
     font-weight: 500;
@@ -67,7 +61,14 @@ header > img {
     margin: 0;
     padding-top: 39px;
     font-size: 24px;
+    justify-content: space-around;
     @include title;
+
+    @media (min-width: 768px) {
+      width: 54%;
+      font-size: 26px;
+      padding-top: 30px;
+    }
   }
 
   & p {
@@ -76,6 +77,11 @@ header > img {
     font-weight: 300;
     margin-bottom: 27px;
     @include write;
+
+    @media (min-width: 768px) {
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
   }
   & button {
     background: var(
@@ -91,5 +97,9 @@ header > img {
     font-weight: 500;
     font-family: Roboto;
     margin-bottom: 57px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 }

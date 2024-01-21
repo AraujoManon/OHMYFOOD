@@ -10,12 +10,26 @@
   font-family: "Roboto", sans-serif;
   color: #000;
 }
+@media (min-width: 768px) {
+  .fonctionnement h2 {
+    margin: 50px 0px 25px 30px;
+  }
+}
 .fonctionnement .fonct° {
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: center;
   padding: 0px 20px 68px 32.51px;
+}
+@media (min-width: 768px) {
+  .fonctionnement .fonct° {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 36.51px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
 }
 
 .fonct° > article {
@@ -29,6 +43,12 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
   color: #000;
+}
+@media (min-width: 768px) {
+  .fonct° > article {
+    width: 322.486px;
+    height: 72.379px;
+  }
 }
 .fonct° > article p {
   display: flex;
@@ -45,20 +65,28 @@
   margin-left: -10px;
 }
 .fonct° > article .icon {
-  color: var(--Grey-Tint4, #7e7e7e);
   width: 13.019px;
   height: 19.903px;
+  color: var(--Grey-Tint4, #7e7e7e);
+  margin-right: 27px;
+  margin-left: 23px;
+}
+.fonct° > article .icon2 {
+  width: 16px;
+  height: 15.922px;
+  color: var(--Grey-Tint4, #7e7e7e);
   margin-right: 27px;
   margin-left: 23px;
 }
 .fonct° > article .purple {
+  width: 18px;
+  height: 17.913px;
   color: var(--Primary, #9356dc);
-  width: 13.019px;
-  height: 19.903px;
   margin-right: 27px;
   margin-left: 23px;
 }
 .fonct° > article h3 {
+  height: 17.913px;
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;

@@ -64,23 +64,32 @@ $light-grey: var(--Background, #f6f6f6);
 
 // Début du code
 .cards {
-  padding: 54px 17px 66px 18px;
+  padding: 30px 17px 30px 18px;
   display: flex;
   flex-direction: column;
   background-color: $light-grey;
 
   & h2 {
     display: flex;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 28px 0px;
     font-size: 24px;
     font-weight: 700;
     @include title;
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
   }
 
   & .rank-cards {
     display: flex;
-    gap: 18px;
+    gap: 50px;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   & article {
     height: 251px;

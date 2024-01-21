@@ -2,22 +2,54 @@ footer {
   background-color: #353535;
   padding: 22px 25px;
 }
+@media (min-width: 768px) {
+  footer {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
 footer img {
   width: 139px;
   height: 27px;
   margin: 0;
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  footer img {
+    margin: 0px 0px 5px 30px;
+  }
+}
 footer section {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  footer section {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  footer .space {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  footer .between {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 footer article {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  width: 100%;
 }
 footer .footer-icon {
   color: var(--White, #fff);

@@ -10,8 +10,6 @@
 }
 
 @mixin format_icon {
-  width: 13.019px;
-  height: 19.903px;
   margin-right: 27px;
   margin-left: 23px;
 }
@@ -31,6 +29,10 @@ $grey: var(--Grey-Tint4, #7e7e7e);
     font-weight: 700;
     margin: 48px 0px 26px 20px;
     @include title;
+
+    @media (min-width: 768px) {
+      margin: 50px 0px 25px 30px;
+    }
   }
 
   & .fonct° {
@@ -39,6 +41,14 @@ $grey: var(--Grey-Tint4, #7e7e7e);
     gap: 24px;
     align-items: center;
     padding: 0px 20px 68px 32.51px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 36.51px;
+      padding-bottom: 50px;
+      justify-content: center;
+    }
   }
 }
 
@@ -52,6 +62,11 @@ $grey: var(--Grey-Tint4, #7e7e7e);
   background: var(--Background, #f6f6f6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   @include title;
+
+  @media (min-width: 768px) {
+    width: 322.486px;
+    height: 72.379px;
+  }
 
   & p {
     display: flex;
@@ -69,16 +84,27 @@ $grey: var(--Grey-Tint4, #7e7e7e);
   }
 
   & .icon {
+    width: 13.019px;
+    height: 19.903px;
     color: $grey;
     @include format_icon;
   }
 
+  & .icon2 {
+    width: 16px;
+    height: 15.922px;
+    color: $grey;
+    @include format_icon;
+  }
   & .purple {
+    width: 18px;
+    height: 17.913px;
     color: $purple;
     @include format_icon;
   }
 
   & h3 {
+    height: 17.913px;
     font-size: 16px;
     font-weight: 500;
     @include title;
