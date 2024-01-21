@@ -1,11 +1,12 @@
 .cards {
-  padding: 54px 20px 66px 20px;
+  padding: 54px 17px 66px 18px;
   display: flex;
   gap: 18px;
   flex-direction: column;
   background-color: var(--Background, #f6f6f6);
 }
 .cards h2 {
+  display: flex;
   margin: 0;
   font-size: 24px;
   font-weight: 700;
