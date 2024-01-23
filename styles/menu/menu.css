@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+body .top {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 89px 0px 17px;
+  align-items: center;
+  height: 63px;
+}
+body a {
+  width: 30px;
+  height: 30px;
+  margin-right: 42px;
+}
+body img {
+  width: 162px;
+  height: 44px;
+  padding: 0px 19px 0px 16px;
+}
+
+.food {
+  height: 275px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+}/*# sourceMappingURL=menu.css.map */

@@ -8,75 +8,139 @@
       src="https://kit.fontawesome.com/62d1c2f4b8.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles/menu/menu.css" />
+    <link rel="stylesheet" href="styles/menu/main-menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-      <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood" />
+      <div class="top">
+        <a href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+          >
+            <path
+              d="M15.8856 21.9283L15.0335 22.7417C14.6727 23.0861 14.0892 23.0861 13.7323 22.7417L6.2706 15.6229C5.9098 15.2785 5.9098 14.7215 6.2706 14.3808L13.7323 7.2583C14.0931 6.9139 14.6765 6.9139 15.0335 7.2583L15.8856 8.07167C16.2502 8.41974 16.2425 8.98763 15.8702 9.32837L11.2451 13.5345H22.2764C22.7869 13.5345 23.1976 13.9265 23.1976 14.4138V15.5862C23.1976 16.0735 22.7869 16.4655 22.2764 16.4655H11.2451L15.8702 20.6716C16.2464 21.0124 16.254 21.5803 15.8856 21.9283Z"
+              fill="#353535"
+            />
+          </svg>
+        </a>
+        <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood" />
+      </div>
+      <img
+        class="food"
+        src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+        alt="Plat succulent"
+      />
     </header>
 
     <main>
-      <img
-        src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-        alt="Plat succulent"
-      />
-      <section>
+      <section class="title">
         <h1>Le délice des sens</h1>
-        <i class="fa-regular fa-heart"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="21"
+          viewBox="0 0 22 21"
+          fill="none"
+        >
+          <path
+            d="M12.2208 2.40551L12.2206 2.40576L11.3741 3.35732L11.0005 3.77727L10.627 3.35732L9.78047 2.40576L9.77992 2.40514C7.78271 0.152585 4.59762 -0.169649 2.47664 1.80201C-0.0175439 4.1245 -0.15494 8.32357 2.0848 10.8495L10.399 20.2148C10.399 20.2149 10.399 20.2149 10.3991 20.2149C10.7372 20.5955 11.2595 20.5955 11.5977 20.2149C11.5977 20.2149 11.5978 20.2149 11.5978 20.2148L19.9122 10.8493L19.9123 10.8492C22.1559 8.32335 22.0186 4.12461 19.5245 1.80213L12.2208 2.40551ZM12.2208 2.40551C14.2226 0.15233 17.4035 -0.169452 19.5243 1.80187L12.2208 2.40551Z"
+            stroke="#101010"
+          />
+        </svg>
       </section>
       <section>
         <h2>ENTREES</h2>
-        <button>
-          <h3>Tartare de thon</h3>
-          <p>Assaisonnée au yuzu</p>
-          25€
-        </button>
-        <button>
-          <h3>Bouchée de homard croustillant</h3>
-          <p>Et sa farandole de petits légumes</p>
-          35€
-        </button>
-        <button>
-          <h3>Poulet rôti aux herbes de Provence</h3>
-          <p>Et sa crème de truffe</p>
-          40€
-        </button>
+        <div class="cards-menu">
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Tartare de thon</h3>
+              <p>Assaisonnée au yuzu</p>
+            </div>
+            <p>25€</p>
+          </a>
+
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Bouchée de homard croustillant</h3>
+              <p>Et sa farandole de petits légumes</p>
+            </div>
+            <p>35€</p>
+          </a>
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Poulet rôti aux herbes de Provence</h3>
+              <p>Et sa crème de truffe</p>
+              <p>40€</p>
+            </div>
+          </a>
+        </div>
       </section>
       <section>
         <h2>PLATS</h2>
-        <button>
-          <h3>Poulet rôti aux herbes de Provence</h3>
-          <p>Et sa crème de truffe</p>
-          40€
-        </button>
-        <button>
-          <h3>Langouste rôtie</h3>
-          <p>Et ses légumes de saison</p>
-          35€
-        </button>
-        <button>
-          <h3>Côte de boeuf Angus</h3>
-          <p>Et sa purée de panais</p>
-          44€
-        </button>
+        <div class="cards-menu">
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Poulet rôti aux herbes de Provence</h3>
+              <p>Et sa crème de truffe</p>
+            </div>
+            <p>40€</p>
+          </a>
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Langouste rôtie</h3>
+              <p>Et ses légumes de saison</p>
+            </div>
+            <p>35€</p>
+          </a>
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Côte de boeuf Angus</h3>
+              <p>Et sa purée de panais</p>
+            </div>
+            <p>44€</p>
+          </a>
+        </div>
       </section>
       <section>
         <h2>DESSERTS</h2>
-        <button>
-          <h3>Farandole de desserts</h3>
-          <p>Du chef</p>
-          18€
-        </button>
-        <button>
-          <h3>Crème brulée</h3>
-          <p>Revisitée</p>
-          22€
-        </button>
-        <button>
-          <h3>Tiramisu</h3>
-          <p>A la noisette</p>
-          23€
-        </button>
+        <div class="cards-menu">
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Farandole de desserts</h3>
+              <p>Du chef</p>
+            </div>
+            <p>18€</p>
+          </a>
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Crème brulée</h3>
+              <p>Revisitée</p>
+            </div>
+            <p>22€</p>
+          </a>
+          <a class="carte"
+            ><div class="card-menu">
+              <h3>Tiramisu</h3>
+              <p>A la noisette</p>
+            </div>
+            <p>23€</p>
+          </a>
+        </div>
       </section>
       <button>Commander</button>
     </main>

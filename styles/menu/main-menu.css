@@ -1,0 +1,49 @@
+main {
+  border-radius: 40px 40px 0px 0px;
+  background: var(--Background, #f6f6f6);
+  margin-top: -30px;
+  padding: 31px 17px 40px 17px;
+}
+main .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  margin: 0%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+section h2 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  padding-bottom: 5px;
+  margin: 40px 0px 0px 0px;
+}
+section .carte {
+  display: flex;
+  flex-direction: row;
+  height: 69px;
+  border-radius: 15.043px;
+  background: var(--White, #fff);
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 289px;
+}
+section .card-menu {
+  display: flex;
+  flex-direction: column;
+}
+section h3 {
+  margin: 0;
+}/*# sourceMappingURL=main-menu.css.map */
