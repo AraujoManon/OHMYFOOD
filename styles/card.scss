@@ -68,6 +68,11 @@ $light-grey: var(--Background, #f6f6f6);
   display: flex;
   flex-direction: column;
   background-color: $light-grey;
+  @media (min-width: 1440px) {
+    padding-right: 80px;
+    padding-left: 180px;
+    margin-bottom: -50px;
+  }
 
   & h2 {
     display: flex;
@@ -75,8 +80,12 @@ $light-grey: var(--Background, #f6f6f6);
     font-size: 24px;
     font-weight: 700;
     @include title;
+
     @media (min-width: 768px) {
       justify-content: center;
+    }
+    @media (min-width: 1440px) {
+      justify-content: flex-start;
     }
   }
 
@@ -90,6 +99,10 @@ $light-grey: var(--Background, #f6f6f6);
       flex-wrap: wrap;
       justify-content: center;
     }
+    @media (min-width: 1440px) {
+      justify-content: flex-start;
+      gap: 0px;
+    }
   }
   & article {
     height: 251px;
@@ -97,6 +110,10 @@ $light-grey: var(--Background, #f6f6f6);
     border-radius: 15px;
     background: #fff;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    @media (min-width: 1440px) {
+      width: 490px;
+      margin: 0px 100px 50px 0px;
+    }
   }
 
   & a {

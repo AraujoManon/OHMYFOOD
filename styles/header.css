@@ -47,14 +47,20 @@ header > img {
   padding-top: 39px;
   font-size: 24px;
   justify-content: space-around;
+  font-weight: 700px;
   font-family: "Roboto", sans-serif;
   color: #000;
 }
 @media (min-width: 768px) {
   .intro h1 {
-    width: 54%;
+    width: 645px;
     font-size: 26px;
     padding-top: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .intro h1 {
+    font-size: 40px;
   }
 }
 .intro p {

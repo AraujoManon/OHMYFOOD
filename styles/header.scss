@@ -62,12 +62,16 @@ header > img {
     padding-top: 39px;
     font-size: 24px;
     justify-content: space-around;
+    font-weight: 700px;
     @include title;
 
     @media (min-width: 768px) {
-      width: 54%;
+      width: 645px;
       font-size: 26px;
       padding-top: 30px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 40px;
     }
   }
 
