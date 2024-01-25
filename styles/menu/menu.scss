@@ -20,6 +20,9 @@ body {
     padding: 14px 89px 0px 17px;
     align-items: center;
     height: 63px;
+    @media (min-width: 768px) {
+      gap: 35%;
+    }
   }
 
   & a {
@@ -29,8 +32,13 @@ body {
   }
   & img {
     width: 162px;
-    height: 44px;
+    height: 36px;
     padding: 0px 19px 0px 16px;
+    @media (min-width: 768px) {
+      width: 200px;
+      height: 34.202px;
+      padding: 0px;
+    }
   }
 }
 
@@ -39,4 +47,7 @@ body {
   width: 100%;
   object-fit: cover;
   padding: 0;
+  @media (min-width: 1024px) {
+    height: 383px;
+  }
 }

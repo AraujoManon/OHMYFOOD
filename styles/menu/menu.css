@@ -15,6 +15,11 @@ body .top {
   align-items: center;
   height: 63px;
 }
+@media (min-width: 768px) {
+  body .top {
+    gap: 35%;
+  }
+}
 body a {
   width: 30px;
   height: 30px;
@@ -22,8 +27,15 @@ body a {
 }
 body img {
   width: 162px;
-  height: 44px;
+  height: 36px;
   padding: 0px 19px 0px 16px;
+}
+@media (min-width: 768px) {
+  body img {
+    width: 200px;
+    height: 34.202px;
+    padding: 0px;
+  }
 }
 
 .food {
@@ -32,4 +44,9 @@ body img {
   -o-object-fit: cover;
      object-fit: cover;
   padding: 0;
+}
+@media (min-width: 1024px) {
+  .food {
+    height: 383px;
+  }
 }/*# sourceMappingURL=menu.css.map */
