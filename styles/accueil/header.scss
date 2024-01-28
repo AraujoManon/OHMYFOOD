@@ -104,10 +104,7 @@ header > .logo {
     }
   }
   & button {
-    background: var(
-      --Button-Gradient,
-      linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
-    );
+    background: $purple-gradient;
     color: white;
     border-radius: 25px;
     height: 50px;

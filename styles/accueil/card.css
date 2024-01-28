@@ -149,4 +149,17 @@
   border: 0px;
   padding-right: 21px;
   display: flex;
+}
+
+.fa-regular {
+  padding-right: 33px;
+  font-size: 21px;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle:checked + i {
+  font-weight: bold;
 }/*# sourceMappingURL=card.css.map */

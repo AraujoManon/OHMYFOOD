@@ -59,7 +59,7 @@ section {
   & .carte {
     display: flex;
     flex-direction: row;
-    height: 42px;
+    height: 39px;
     width: 319px;
     border-radius: 15.043px;
     background: var(--White, #fff);
@@ -71,6 +71,8 @@ section {
     @media (min-width: 768px) {
       width: 100%;
     }
+  }
+  & .carte:hover {
   }
 
   & h3 {
@@ -85,6 +87,28 @@ section {
     font-size: 15.043px;
     font-weight: 300;
     margin: 5px 0px 0px 0px;
+  }
+  & .check {
+    display: flex;
+    align-items: flex-end;
+    margin-right: -60px;
+  }
+  & .check:hover {
+    margin: 0px;
+  }
+  & svg {
+    position: relative;
+    right: 40px;
+    bottom: -15px;
+  }
+  & svg:hover {
+    right: -15px;
+  }
+  & path {
+    fill-opacity: 0%;
+  }
+  & path:hover {
+    fill-opacity: 100%;
   }
 }
 .button-commander {
