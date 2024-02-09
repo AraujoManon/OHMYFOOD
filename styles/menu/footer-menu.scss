@@ -73,6 +73,10 @@ footer {
       gap: 15px;
     }
   }
+  & .between a {
+    width: 100%;
+    text-decoration: none;
+  }
 
   & article {
     display: flex;

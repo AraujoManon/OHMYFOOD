@@ -1,0 +1,177 @@
+.loader {
+  position: fixed;
+  background-image: var(--Button-Gradient, linear-gradient(to right, #9356dc, #ff79da));
+  width: 100%;
+  height: 200vh;
+  z-index: 9999;
+  padding-top: 50px;
+  animation: loader 3s forwards;
+}
+.loader img {
+  height: 100px;
+}
+.loader .poele {
+  height: 210px;
+  margin-right: 350px;
+  margin-top: -35px;
+  animation: poele 700ms alternate infinite;
+}
+
+.svgfood {
+  display: flex;
+  margin-top: 75px;
+}
+
+.loader img.ohmyfood {
+  width: 200px;
+  height: 40px;
+  padding-top: 50px;
+}
+
+.loader img.poivron {
+  animation: food 1400ms linear infinite;
+  margin-left: -30px;
+  height: 45px;
+  width: 45px;
+}
+
+.loader img.carrotte {
+  animation: food2 1400ms linear infinite;
+  animation-delay: 200ms;
+  margin-left: -30px;
+  height: 45px;
+  width: 45px;
+}
+
+.loader img.oignon {
+  animation: food3 1400ms linear infinite;
+  animation-delay: 400ms;
+  height: 45px;
+  width: 45px;
+}
+
+.loader img.buche {
+  height: 130px;
+  animation: bois 1ms linear forwards;
+  margin-top: -110px;
+  margin-right: 35px;
+}
+
+.feux1 {
+  animation: flamme 1000ms alternate infinite;
+  margin-right: -65px;
+  margin-top: -135px;
+  height: 45px;
+  width: 45px;
+}
+
+.feux2 {
+  animation: flamme 1000ms 800ms alternate infinite;
+  margin-top: -100px;
+  height: 45px;
+  width: 45px;
+}
+
+.feux3 {
+  animation: flamme 1000ms 400ms alternate infinite;
+  margin-top: -100px;
+  margin-right: 60px;
+  height: 45px;
+  width: 45px;
+}
+
+.feux4 {
+  animation: flamme 1000ms 600ms alternate infinite;
+  margin-top: -100px;
+  margin-right: 120px;
+  height: 45px;
+  width: 45px;
+}
+
+.imglogo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes poele {
+  0% {
+    transform: translateX(100%) rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(70%) rotate(20deg);
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes food {
+  0% {
+    transform: translateX(-180%) translateY(155%) rotate(0deg) scale(0);
+  }
+  25% {
+    transform: translateX(-150%) translateY(0%) rotate(100deg) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%) rotate(150deg) scale(1);
+  }
+  75% {
+    transform: translateX(30%) translateY(50%) rotate(200deg) scale(1);
+  }
+  100% {
+    transform: translateX(70%) translateY(280%) rotate(250deg) scale(0);
+  }
+}
+@keyframes food2 {
+  0% {
+    transform: translateX(-180%) translateY(160%) rotate(0deg) scale(0);
+  }
+  25% {
+    transform: translateX(-150%) translateY(0%) rotate(100deg) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%) rotate(150deg) scale(1);
+  }
+  75% {
+    transform: translateX(40%) translateY(50%) rotate(200deg) scale(1);
+  }
+  100% {
+    transform: translateX(100%) translateY(280%) rotate(250deg) scale(0);
+  }
+}
+@keyframes food3 {
+  0% {
+    transform: translateX(-200%) translateY(160%) rotate(0deg) scale(0);
+  }
+  25% {
+    transform: translateX(-180%) translateY(0%) rotate(100deg) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%) rotate(150deg) scale(1);
+  }
+  75% {
+    transform: translateX(50%) translateY(100%) rotate(200deg) scale(1);
+  }
+  100% {
+    transform: translateX(70%) translateY(200%) rotate(250deg) scale(0);
+  }
+}
+@keyframes flamme {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: scaleX(1.3) scaleY(1.1);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  70% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: scaleX(1) scaleY(0);
+  }
+}/*# sourceMappingURL=loader.css.map */

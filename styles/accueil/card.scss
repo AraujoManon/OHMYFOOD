@@ -175,20 +175,62 @@ $purple-gradient: var(
   }
 }
 
-.cards button {
+.cards label {
   background-color: #fff;
   border: 0px;
-  padding-right: 21px;
+  padding-right: 33px;
   display: flex;
 }
+
 .fa-regular {
-  padding-right: 33px;
-  font-size: 21px;
+  font-size: 22px;
+  position: absolute;
 }
+
+label .fa-solid {
+  opacity: 0;
+  font-size: 22px;
+  font-weight: bold;
+  background-image: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 .toggle {
   display: none;
 }
 
-.toggle:checked + i {
-  font-weight: bold;
+.toggle:checked + .fa-regular {
+  animation: heartregular 2s forwards;
+  display: inline;
+}
+
+.toggle:checked ~ label .fa-solid {
+  animation: heartregular 2s forwards;
+  opacity: 1;
+  display: flex;
+}
+
+@keyframes heartregular {
+  0% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes heartsolid {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }

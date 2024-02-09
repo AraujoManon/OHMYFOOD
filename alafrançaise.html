@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/menu/menu.css" />
     <link rel="stylesheet" href="styles/menu/main-menu.css" />
     <link rel="stylesheet" href="styles/menu/footer-menu.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +24,45 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <div class="imglogo">
+        <img
+          class="ohmyfood"
+          src="images/logo/ohmyfood-2.png"
+          alt="Logo ohmyfood"
+        />
+
+        <div class="svgfood">
+          <img
+            class="oignon"
+            src="images/SVG/onion-svgrepo-com.svg"
+            alt="Oignon"
+          />
+
+          <img
+            class="carrotte"
+            src="images/SVG/carrot-svgrepo-com.svg"
+            alt="Carrotte"
+          />
+          <img
+            class="poivron"
+            src="images/SVG/bell-pepper-svgrepo-com.svg"
+            alt="Poivron"
+          />
+        </div>
+
+        <img class="poele" src="images/SVG/pan-svgrepo-com.svg" alt="Poele" />
+        <img
+          class="buche"
+          src="images/SVG/log-nature-svgrepo-com.svg"
+          alt="Buche"
+        />
+        <img class="feux1" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux2" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux3" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux4" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+      </div>
+    </div>
     <header>
       <div class="top">
         <a href="index.html">
@@ -51,9 +91,12 @@
     <main>
       <section class="title">
         <h1>A la française</h1>
-        <i class="fa-regular fa-heart"></i>
+        <label>
+          <input type="checkbox" class="toggle" />
+          <i class="fa-regular fa-heart"></i>
+        </label>
       </section>
-      <section>
+      <section class="entrees">
         <h2>ENTREES</h2>
         <div class="cards-menu">
           <a class="carte"
@@ -137,7 +180,7 @@
           </a>
         </div>
       </section>
-      <section>
+      <section class="plats">
         <h2>PLATS</h2>
         <div class="cards-menu">
           <a class="carte"
@@ -220,7 +263,7 @@
           </a>
         </div>
       </section>
-      <section>
+      <section class="desserts">
         <h2>DESSERTS</h2>
         <div class="cards-menu">
           <a class="carte"
@@ -321,7 +364,11 @@
         </div>
         <div class="between">
           <article><p class="without-icon">Mentions légales</p></article>
-          <article><p class="without-icon">Contact</p></article>
+          <article class="mail">
+            <a href="mailto:email@exemple.com?subject=Object">
+              <p class="without-icon">Contact</p></a
+            >
+          </article>
         </div>
       </section>
     </footer>

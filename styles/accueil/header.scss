@@ -10,7 +10,10 @@
   font-family: "Roboto", sans-serif;
   color: #000;
 }
-
+$purple-gradient: var(
+  --Button-Gradient,
+  linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+);
 // Header:
 body {
   margin: 0%;
@@ -114,9 +117,14 @@ header > .logo {
     font-weight: 500;
     font-family: Roboto;
     margin-bottom: 57px;
-
-    @media (min-width: 768px) {
-      margin-bottom: 30px;
-    }
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   }
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

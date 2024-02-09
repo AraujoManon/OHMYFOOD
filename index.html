@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/accueil/card.css" />
     <link rel="stylesheet" href="styles/accueil/footer.css" />
     <link rel="stylesheet" href="styles/accueil/media_queries.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +23,45 @@
     />
   </head>
   <body>
+    <div class="loader">
+      <div class="imglogo">
+        <img
+          class="ohmyfood"
+          src="images/logo/ohmyfood-2.png"
+          alt="Logo ohmyfood"
+        />
+
+        <div class="svgfood">
+          <img
+            class="oignon"
+            src="images/SVG/onion-svgrepo-com.svg"
+            alt="Oignon"
+          />
+
+          <img
+            class="carrotte"
+            src="images/SVG/carrot-svgrepo-com.svg"
+            alt="Carrotte"
+          />
+          <img
+            class="poivron"
+            src="images/SVG/bell-pepper-svgrepo-com.svg"
+            alt="Poivron"
+          />
+        </div>
+
+        <img class="poele" src="images/SVG/pan-svgrepo-com.svg" alt="Poele" />
+        <img
+          class="buche"
+          src="images/SVG/log-nature-svgrepo-com.svg"
+          alt="Buche"
+        />
+        <img class="feux1" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux2" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux3" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux4" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+      </div>
+    </div>
     <header>
       <div class="logo">
         <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood" />
@@ -81,9 +121,12 @@
                   <h4>La palette du goût</h4>
                   <p>Ménilmontant</p>
                 </div></a
-              ><label>
-                <input type="checkbox" class="toggle" />
-                <i class="fa-regular fa-heart"></i>
+              ><label
+                ><div class="heart-container">
+                  <input type="checkbox" class="toggle" />
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
               </label>
             </div>
           </article>
@@ -102,9 +145,11 @@
                   <p>Charonne</p>
                 </div></a
               >
-              <button>
+              <label>
+                <input type="checkbox" class="toggle" />
+                <i class="fa-regular fa-heart"></i>
                 <i class="fa-solid fa-heart"></i>
-              </button>
+              </label>
             </div>
           </article>
           <article>
@@ -123,9 +168,11 @@
                 </div></a
               >
 
-              <button>
+              <label>
+                <input type="checkbox" class="toggle" />
                 <i class="fa-regular fa-heart"></i>
-              </button>
+                <i class="fa-solid fa-heart"></i>
+              </label>
             </div>
           </article>
           <article>
@@ -141,7 +188,11 @@
                   <p>Folie-Méricourt</p>
                 </div></a
               >
-              <i class="fa-regular fa-heart"></i>
+              <label>
+                <input type="checkbox" class="toggle" />
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+              </label>
             </div>
           </article>
         </div>
@@ -155,14 +206,18 @@
             <i class="fa-solid fa-utensils"></i>
             <p class="footer-icon">Proposer un restaurant</p>
           </article>
-          <article class>
+          <article>
             <i class="fa-solid fa-handshake-angle"></i>
             <p class="footer-icon">Devenir partenaire</p>
           </article>
         </div>
         <div class="between">
           <article><p class="without-icon">Mentions légales</p></article>
-          <article><p class="without-icon">Contact</p></article>
+          <article class="mail">
+            <a href="mailto:email@exemple.com?subject=Object">
+              <p class="without-icon">Contact</p></a
+            >
+          </article>
         </div>
       </section>
     </footer>
