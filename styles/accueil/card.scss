@@ -182,14 +182,18 @@ $purple-gradient: var(
   display: flex;
 }
 
+.heart-container {
+  overflow: hidden;
+  width: 22.5px;
+  height: 22.5px;
+  position: relative;
+}
 .fa-regular {
   font-size: 22px;
-  position: absolute;
 }
 
 label .fa-solid {
-  opacity: 0;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: bold;
   background-image: var(
     --Button-Gradient,
@@ -198,7 +202,6 @@ label .fa-solid {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  display: inline-block;
 }
 
 .toggle {
@@ -207,30 +210,31 @@ label .fa-solid {
 
 .toggle:checked + .fa-regular {
   animation: heartregular 2s forwards;
-  display: inline;
 }
 
-.toggle:checked ~ label .fa-solid {
-  animation: heartregular 2s forwards;
-  opacity: 1;
-  display: flex;
+.toggle:checked + .fa-regular + .fa-solid {
+  animation: heartsolid 2s forwards;
+  position: absolute;
+  right: 0px;
 }
 
 @keyframes heartregular {
   0% {
-    transform: scaleY(1);
+    opacity: 1;
   }
-
+  90% {
+    opacity: 1;
+  }
   100% {
-    transform: scaleY(0);
+    opacity: 0;
   }
 }
 
 @keyframes heartsolid {
   0% {
-    transform: scaleY(1);
+    transform: scaleY(0) scaleX(0.2);
   }
   100% {
-    transform: scaleY(1);
+    transform: scaleY(1.15) scaleX(1);
   }
 }

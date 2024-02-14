@@ -3,6 +3,7 @@ $purple-gradient: var(
   linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
 );
 $light-grey: var(--Background, #f6f6f6);
+
 main {
   border-radius: 40px 40px 0px 0px;
   background: $light-grey;
@@ -42,9 +43,6 @@ section {
   }
   @media (min-width: 1024px) {
     padding: 0px 110px 0px 110px;
-  }
-  @media (min-width: 1440px) {
-    padding: 0px 210px 0px 10px;
   }
 
   & h2 {
@@ -175,6 +173,68 @@ button:hover {
 .desserts {
   animation: menu 3000ms forwards;
   animation-delay: 1000ms;
+}
+label {
+  background-color: #fff;
+  border: 0px;
+  display: flex;
+}
+
+.heart-container {
+  overflow: hidden;
+  width: 22.5px;
+  height: 22.5px;
+  position: relative;
+}
+.fa-regular {
+  font-size: 22px;
+}
+
+label .fa-solid {
+  font-size: 23px;
+  font-weight: bold;
+  background-image: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle:checked + .fa-regular {
+  animation: heartregular 2s forwards;
+}
+
+.toggle:checked + .fa-regular + .fa-solid {
+  animation: heartsolid 2s forwards;
+  position: absolute;
+  right: 0px;
+}
+
+@keyframes heartregular {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes heartsolid {
+  0% {
+    transform: scaleY(0) scaleX(0.2);
+  }
+  100% {
+    transform: scaleY(1.15) scaleX(1);
+  }
 }
 
 @keyframes menu {

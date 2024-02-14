@@ -5,7 +5,7 @@
   height: 200vh;
   z-index: 9999;
   padding-top: 50px;
-  animation: loader 3s forwards;
+  animation: loader 60000s forwards;
 }
 .loader img {
   height: 100px;
@@ -18,14 +18,18 @@
 }
 
 .svgfood {
-  display: flex;
   margin-top: 75px;
+  width: 200px;
 }
 
 .loader img.ohmyfood {
   width: 200px;
   height: 40px;
   padding-top: 50px;
+}
+
+.imglogo {
+  width: 100%;
 }
 
 .loader img.poivron {
@@ -107,53 +111,53 @@
 }
 @keyframes food {
   0% {
-    transform: translateX(-180%) translateY(155%) rotate(0deg) scale(0);
+    transform: translateX(-90px) translateY(130px) rotate(0deg) scale(0);
   }
   25% {
-    transform: translateX(-150%) translateY(0%) rotate(100deg) scale(1);
+    transform: translateX(-90px) translateY(0px) rotate(100deg) scale(1);
   }
   50% {
-    transform: translateX(-50%) translateY(-50%) rotate(150deg) scale(1);
+    transform: translateX(-30px) translateY(-50px) rotate(150deg) scale(1);
   }
   75% {
-    transform: translateX(30%) translateY(50%) rotate(200deg) scale(1);
+    transform: translateX(0px) translateY(50px) rotate(200deg) scale(1);
   }
   100% {
-    transform: translateX(70%) translateY(280%) rotate(250deg) scale(0);
+    transform: translateX(-10px) translateY(130px) rotate(250deg) scale(0);
   }
 }
 @keyframes food2 {
   0% {
-    transform: translateX(-180%) translateY(160%) rotate(0deg) scale(0);
+    transform: translateX(-100px) translateY(100px) rotate(0deg) scale(0);
   }
   25% {
-    transform: translateX(-150%) translateY(0%) rotate(100deg) scale(1);
+    transform: translateX(-100px) translateY(0px) rotate(100deg) scale(1);
   }
   50% {
-    transform: translateX(-50%) translateY(-50%) rotate(150deg) scale(1);
+    transform: translateX(-30px) translateY(-50px) rotate(150deg) scale(1);
   }
   75% {
-    transform: translateX(40%) translateY(50%) rotate(200deg) scale(1);
+    transform: translateX(30px) translateY(50px) rotate(200deg) scale(1);
   }
   100% {
-    transform: translateX(100%) translateY(280%) rotate(250deg) scale(0);
+    transform: translateX(40px) translateY(130px) rotate(250deg) scale(0);
   }
 }
 @keyframes food3 {
   0% {
-    transform: translateX(-200%) translateY(160%) rotate(0deg) scale(0);
+    transform: translateX(-90px) translateY(90px) rotate(0deg) scale(0);
   }
   25% {
-    transform: translateX(-180%) translateY(0%) rotate(100deg) scale(1);
+    transform: translateX(-100px) translateY(0px) rotate(100deg) scale(1);
   }
   50% {
-    transform: translateX(-50%) translateY(-50%) rotate(150deg) scale(1);
+    transform: translateX(-30px) translateY(-50px) rotate(150deg) scale(1);
   }
   75% {
-    transform: translateX(50%) translateY(100%) rotate(200deg) scale(1);
+    transform: translateX(70px) translateY(70px) rotate(200deg) scale(1);
   }
   100% {
-    transform: translateX(70%) translateY(200%) rotate(250deg) scale(0);
+    transform: translateX(-60px) translateY(100px) rotate(250deg) scale(0);
   }
 }
 @keyframes flamme {

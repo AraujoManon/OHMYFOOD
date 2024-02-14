@@ -88,6 +88,11 @@ footer {
   & .without-icon {
     @include style-text;
     font-weight: 400;
+    text-decoration: none;
+  }
+  & a {
+    text-decoration: none;
+    width: 100%;
   }
 
   & .fa-solid {
