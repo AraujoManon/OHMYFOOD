@@ -62,6 +62,11 @@ section .cards-menu {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 425px) {
+  section .cards-menu {
+    margin-left: 17px;
+  }
+}
 section .carte {
   display: flex;
   flex-direction: row;
@@ -75,6 +80,11 @@ section .carte {
   justify-content: space-between;
   align-items: flex-end;
   overflow: hidden;
+}
+@media (max-width: 425px) {
+  section .carte {
+    width: 90%;
+  }
 }
 @media (min-width: 768px) {
   section .carte {
@@ -163,15 +173,30 @@ button:hover {
 .entrees {
   animation: menu 3000ms forwards;
 }
+@media (max-width: 425px) {
+  .entrees {
+    width: 100%;
+  }
+}
 
 .plats {
   animation: menu 3000ms forwards;
   animation-delay: 700ms;
 }
+@media (max-width: 425px) {
+  .plats {
+    width: 100%;
+  }
+}
 
 .desserts {
   animation: menu 3000ms forwards;
   animation-delay: 1000ms;
+}
+@media (max-width: 425px) {
+  .desserts {
+    width: 100%;
+  }
 }
 
 label {

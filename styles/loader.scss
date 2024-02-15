@@ -17,7 +17,7 @@
   height: 200vh;
   z-index: 9999;
   padding-top: 50px;
-  animation: loader 60000s forwards;
+  animation: loader 3s forwards;
 
   & img {
     height: 100px;
@@ -32,6 +32,8 @@
 .svgfood {
   margin-top: 75px;
   width: 200px;
+  display: flex;
+  justify-content: center;
 }
 .loader img.ohmyfood {
   width: 200px;

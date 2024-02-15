@@ -4,6 +4,11 @@
   flex-direction: column;
   background-color: var(--Background, #f6f6f6);
 }
+@media (max-width: 425px) {
+  .cards {
+    align-items: center;
+  }
+}
 @media (min-width: 1440px) {
   .cards {
     padding-right: 80px;
@@ -34,6 +39,11 @@
   gap: 50px;
   flex-direction: column;
 }
+@media (max-width: 425px) {
+  .cards .rank-cards {
+    width: 80%;
+  }
+}
 @media (min-width: 768px) {
   .cards .rank-cards {
     flex-direction: row;
@@ -53,6 +63,11 @@
   border-radius: 15px;
   background: #fff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 425px) {
+  .cards article {
+    width: 100%;
+  }
 }
 @media (min-width: 1440px) {
   .cards article {
@@ -88,6 +103,16 @@
   width: 80px;
   margin: 0;
   padding: 9px 7px;
+}
+@media (max-width: 425px) {
+  .cards h3 {
+    left: 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .cards h3 {
+    left: 370px;
+  }
 }
 .cards p {
   margin: -20px;
