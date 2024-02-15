@@ -40,7 +40,7 @@
 }
 
 .loader img.carrotte {
-  animation: food2 1400ms linear infinite;
+  animation: food 1400ms linear infinite;
   animation-delay: 200ms;
   margin-left: -30px;
   height: 45px;
@@ -48,7 +48,7 @@
 }
 
 .loader img.oignon {
-  animation: food3 1400ms linear infinite;
+  animation: food 1400ms linear infinite;
   animation-delay: 400ms;
   height: 45px;
   width: 45px;
@@ -111,19 +111,19 @@
 }
 @keyframes food {
   0% {
-    transform: translateX(-90px) translateY(130px) rotate(0deg) scale(0);
+    transform: translateX(-30px) translateY(80px) rotate(0deg) scale(0);
   }
   25% {
-    transform: translateX(-90px) translateY(0px) rotate(100deg) scale(1);
+    transform: translateX(-10px) translateY(0px) rotate(100deg) scale(1);
   }
   50% {
-    transform: translateX(-30px) translateY(-50px) rotate(150deg) scale(1);
+    transform: translateX(10px) translateY(-50px) rotate(150deg) scale(1);
   }
   75% {
-    transform: translateX(0px) translateY(50px) rotate(200deg) scale(1);
+    transform: translateX(30px) translateY(50px) rotate(200deg) scale(1);
   }
   100% {
-    transform: translateX(-10px) translateY(130px) rotate(250deg) scale(0);
+    transform: translateX(60px) translateY(90px) rotate(250deg) scale(0);
   }
 }
 @keyframes food2 {
