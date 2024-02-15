@@ -172,19 +172,20 @@
 .cards label {
   background-color: #fff;
   border: 0px;
-  padding-right: 33px;
+  margin-right: 33px;
   display: flex;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
 }
 
 .heart-container {
-  overflow: hidden;
-  width: 22.5px;
-  height: 22.5px;
   position: relative;
 }
 
 .fa-regular {
   font-size: 22px;
+  padding-right: 3px;
 }
 
 label .fa-solid {
@@ -207,7 +208,7 @@ label .fa-solid {
 .toggle:checked + .fa-regular + .fa-solid {
   animation: heartsolid 2s forwards;
   position: absolute;
-  right: 0px;
+  right: 2px;
 }
 
 @keyframes heartregular {

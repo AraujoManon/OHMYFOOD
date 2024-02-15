@@ -95,7 +95,7 @@ header > .logo img {
     margin-bottom: 18px;
   }
 }
-.intro button {
+.intro .button {
   background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   color: white;
   border-radius: 25px;
@@ -107,6 +107,10 @@ header > .logo img {
   font-family: Roboto;
   margin-bottom: 57px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .intro {
@@ -114,7 +118,7 @@ header > .logo img {
   }
 }
 
-button:hover {
+.button:hover {
   filter: brightness(1.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=header.css.map */
