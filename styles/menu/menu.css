@@ -17,7 +17,17 @@ body .top {
 }
 @media (min-width: 768px) {
   body .top {
+    gap: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  body .top {
     gap: 35%;
+  }
+}
+@media (min-width: 1440px) {
+  body .top {
+    gap: 40%;
   }
 }
 body a {
