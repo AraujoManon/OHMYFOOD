@@ -73,7 +73,7 @@ $purple-gradient: var(
   display: flex;
   flex-direction: column;
   background-color: $light-grey;
-  @media (max-width: 425px) {
+  @media (max-width: 375px) {
     align-items: center;
   }
   @media (min-width: 1440px) {
@@ -101,13 +101,20 @@ $purple-gradient: var(
     display: flex;
     gap: 50px;
     flex-direction: column;
-    @media (max-width: 425px) {
+    @media (max-width: 375px) {
+      align-items: center;
+    }
+
+    @media (min-width: 425px) {
       width: 80%;
     }
 
     @media (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
       justify-content: center;
     }
     @media (min-width: 1440px) {
@@ -121,9 +128,10 @@ $purple-gradient: var(
     border-radius: 15px;
     background: #fff;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-    @media (max-width: 425px) {
-      width: 100%;
+    @media (max-width: 375px) {
+      width: 280px;
     }
+
     @media (min-width: 1440px) {
       width: 490px;
       margin: 0px 100px 50px 0px;
@@ -146,8 +154,8 @@ $purple-gradient: var(
     top: -160px;
     left: 226px;
     @include new;
-    @media (max-width: 425px) {
-      left: 100px;
+    @media (max-width: 375px) {
+      left: 170px;
     }
     @media (min-width: 1440px) {
       left: 370px;
@@ -234,6 +242,31 @@ label .fa-solid {
   right: 2px;
 }
 
+.toggle:not(:checked) + .fa-regular + .fa-solid {
+  animation: reverseHeartsolid 5s forwards;
+  position: absolute;
+}
+
+@keyframes reverseHeartregular {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reverseHeartsolid {
+  0% {
+    transform: scaleY(1.15) scaleX(1);
+  }
+  100% {
+    transform: scaleY(0) scaleX(0);
+  }
+}
 @keyframes heartregular {
   0% {
     opacity: 1;

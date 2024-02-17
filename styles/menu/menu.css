@@ -14,10 +14,23 @@ body .top {
   padding: 14px 89px 0px 17px;
   align-items: center;
   height: 63px;
+  gap: 10%;
+}
+@media (max-width: 320px) {
+  body .top {
+    gap: 5%;
+  }
+}
+@media (min-width: 425px) {
+  body .top {
+    gap: 20%;
+  }
 }
 @media (min-width: 768px) {
   body .top {
     gap: 30%;
+    height: 94.339px;
+    padding: 0px 0px 2px 17px;
   }
 }
 @media (min-width: 1024px) {
@@ -47,6 +60,11 @@ body img {
     padding: 0px;
   }
 }
+@media (min-width: 320px) {
+  body img {
+    margin-left: -25px;
+  }
+}
 
 .food {
   height: 275px;
@@ -54,6 +72,11 @@ body img {
   -o-object-fit: cover;
      object-fit: cover;
   padding: 0;
+}
+@media (min-width: 320px) {
+  .food {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 1024px) {
   .food {

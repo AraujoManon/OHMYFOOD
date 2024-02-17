@@ -19,19 +19,14 @@ main {
   & .title {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-right: 17px;
-    margin-left: 17px;
-    @media (min-width: 768px) {
-      gap: 24px;
-      justify-content: center;
-    }
+    justify-content: center;
   }
   & h1 {
     font-family: "Shrikhand", serif;
     font-size: 28px;
     margin: 0%;
+    font-weight: 400;
   }
 }
 
@@ -53,12 +48,18 @@ section {
     width: 40px;
     padding-bottom: 5px;
     margin: 40px 0px 0px 0px;
+    @media (min-width: 1440px) {
+      margin-left: 80px;
+    }
   }
   & .cards-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (max-width: 425px) {
+    @media (min-width: 320px) {
+      margin-left: 0px;
+    }
+    @media (min-width: 425px) {
       margin-left: 17px;
     }
   }
@@ -83,6 +84,9 @@ section {
     @media (min-width: 768px) {
       width: 100%;
     }
+    @media (min-width: 1440px) {
+      width: 634px;
+    }
   }
 
   .carte:hover .check {
@@ -96,7 +100,7 @@ section {
     margin: 0;
     font-family: Roboto;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -124,6 +128,9 @@ section {
     top: 16px;
   }
 }
+.check p {
+  font-weight: 700;
+}
 
 .button-commander {
   display: flex;
@@ -144,9 +151,6 @@ section {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: 0px;
   margin: 40px 81.5px 0px 81px;
-}
-.commander:hover {
-  color: #99e2d0;
 }
 
 section.title label {
@@ -192,17 +196,21 @@ button:hover {
 label {
   background-color: #fff;
   border: 0px;
+  margin-left: 24px;
   display: flex;
+  width: 30px;
+  height: 27px;
+  overflow: hidden;
 }
 
 .heart-container {
-  overflow: hidden;
-  width: 22.5px;
-  height: 22.5px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .fa-regular {
   font-size: 22px;
+  padding-right: 3px;
 }
 
 label .fa-solid {
@@ -228,9 +236,21 @@ label .fa-solid {
 .toggle:checked + .fa-regular + .fa-solid {
   animation: heartsolid 2s forwards;
   position: absolute;
-  right: 0px;
 }
 
+.toggle:not(:checked) + .fa-regular + .fa-solid {
+  animation: reverseHeartsolid 2s forwards;
+  position: absolute;
+}
+
+@keyframes reverseHeartsolid {
+  0% {
+    transform: scaleY(1.15) scaleX(1);
+  }
+  100% {
+    transform: scaleY(0) scaleX(0);
+  }
+}
 @keyframes heartregular {
   0% {
     opacity: 1;
@@ -249,15 +269,5 @@ label .fa-solid {
   }
   100% {
     transform: scaleY(1.15) scaleX(1);
-  }
-}
-
-@keyframes menu {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
   }
 }
