@@ -1,3 +1,5 @@
+// Cartes de l'accuei :l
+
 // Mixin :
 @mixin title {
   font-family: "Roboto", sans-serif;
@@ -67,7 +69,7 @@ $purple-gradient: var(
   linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
 );
 
-// Début du code
+// Début du code :
 .cards {
   padding: 30px 17px 30px 18px;
   display: flex;
@@ -247,6 +249,7 @@ label .fa-solid {
   position: absolute;
 }
 
+// Keyframes :
 @keyframes reverseHeartregular {
   0% {
     opacity: 0;

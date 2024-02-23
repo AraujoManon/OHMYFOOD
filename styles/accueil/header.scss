@@ -1,4 +1,5 @@
-// Header + partie h1 "Réservez le menu..." ...
+// Header + partie h1 "Réservez le menu..." :
+
 // Mixin :
 @mixin write {
   font-family: "Roboto", sans-serif;
@@ -13,7 +14,8 @@ $purple-gradient: var(
   --Button-Gradient,
   linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
 );
-// Header:
+
+// Header :
 body {
   margin: 0%;
 }
@@ -80,7 +82,7 @@ header > .logo {
     padding-top: 39px;
     font-size: 24px;
     justify-content: space-around;
-    font-weight: 700px;
+    font-weight: 700;
     @include title;
 
     @media (min-width: 768px) {

@@ -1,8 +1,12 @@
+// Header des menus
+
+// Mixin:
 @mixin title {
   font-family: "Roboto", sans-serif;
   color: #000;
 }
 
+// Début du code:
 body {
   margin: 0px;
   display: flex;

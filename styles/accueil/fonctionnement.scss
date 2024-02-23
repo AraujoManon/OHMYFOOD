@@ -1,4 +1,6 @@
-// Mixin ::
+// Partie fonctionnement de l'accueil :
+
+// Mixin :
 @mixin title {
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -92,7 +94,7 @@ $grey: var(--Grey-Tint4, #7e7e7e);
     color: white;
     background-color: $purple;
     border-radius: 50%;
-    border: 1px solide $purple;
+    border: 1px solid $purple;
     width: 24px;
     height: 24px;
     margin-left: -10px;

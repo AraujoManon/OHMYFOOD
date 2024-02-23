@@ -1,9 +1,13 @@
+// Corp de page des menus :
+
+// Variable :
 $purple-gradient: var(
   --Button-Gradient,
   linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
 );
 $light-grey: var(--Background, #f6f6f6);
 
+// Début du code :
 main {
   border-radius: 40px 40px 0px 0px;
   background: $light-grey;
@@ -243,6 +247,7 @@ label .fa-solid {
   position: absolute;
 }
 
+// Keyframes :
 @keyframes reverseHeartsolid {
   0% {
     transform: scaleY(1.15) scaleX(1);
