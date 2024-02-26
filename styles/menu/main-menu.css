@@ -255,6 +255,14 @@ label .fa-solid {
   position: absolute;
 }
 
+@keyframes menu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes reverseHeartsolid {
   0% {
     transform: scaleY(1.15) scaleX(1);

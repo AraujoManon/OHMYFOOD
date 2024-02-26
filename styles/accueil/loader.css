@@ -126,40 +126,6 @@
     transform: translateX(60px) translateY(90px) rotate(250deg) scale(0);
   }
 }
-@keyframes food2 {
-  0% {
-    transform: translateX(-100px) translateY(100px) rotate(0deg) scale(0);
-  }
-  25% {
-    transform: translateX(-100px) translateY(0px) rotate(100deg) scale(1);
-  }
-  50% {
-    transform: translateX(-30px) translateY(-50px) rotate(150deg) scale(1);
-  }
-  75% {
-    transform: translateX(30px) translateY(50px) rotate(200deg) scale(1);
-  }
-  100% {
-    transform: translateX(40px) translateY(130px) rotate(250deg) scale(0);
-  }
-}
-@keyframes food3 {
-  0% {
-    transform: translateX(-90px) translateY(90px) rotate(0deg) scale(0);
-  }
-  25% {
-    transform: translateX(-100px) translateY(0px) rotate(100deg) scale(1);
-  }
-  50% {
-    transform: translateX(-30px) translateY(-50px) rotate(150deg) scale(1);
-  }
-  75% {
-    transform: translateX(70px) translateY(70px) rotate(200deg) scale(1);
-  }
-  100% {
-    transform: translateX(-60px) translateY(100px) rotate(250deg) scale(0);
-  }
-}
 @keyframes flamme {
   0% {
     transform: scaleX(1) scaleY(1);
