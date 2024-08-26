@@ -2,6 +2,7 @@ Mission - Projet OpenClassrooms
 Dans le cadre de ma formation OpenClassrooms, j’ai réalisé l’intégration d’un site mobile pour une startup, Ohmyfood, qui répertorie les menus de restaurants gastronomiques et permet aux clients de composer leur repas à l'avance.
 
 
+
 Exigences principales :
 
 Pages principales : Une page d'accueil avec localisation des restaurants et présentation des menus sous forme de cartes redirigeant vers les pages des menus.
@@ -9,6 +10,7 @@ Pages principales : Une page d'accueil avec localisation des restaurants et pré
 Pages de menu : 4 pages contenant les menus de différents restaurants, avec des animations CSS pour l'apparition des plats.
 
 Header et footer : Présents sur toutes les pages, avec un bouton de retour sur la page d'accueil depuis les pages de menu.
+
 
 
 Contraintes techniques :
