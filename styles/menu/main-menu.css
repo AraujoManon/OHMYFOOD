@@ -1,4 +1,6 @@
 main {
+  opacity: 0;
+  animation: menu 1500ms forwards;
   border-radius: 40px 40px 0px 0px;
   background: var(--Background, #f6f6f6);
   margin-top: -55px;
@@ -28,6 +30,8 @@ main h1 {
 }
 
 section {
+  opacity: 0;
+  animation: menu 3000ms forwards;
   display: flex;
   flex-direction: column;
 }
@@ -60,14 +64,10 @@ section .cards-menu {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 320px) {
+@media (max-width: 767px) {
   section .cards-menu {
-    margin-left: 0px;
-  }
-}
-@media (min-width: 425px) {
-  section .cards-menu {
-    margin-left: 17px;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 section .carte {
@@ -87,6 +87,11 @@ section .carte {
 @media (max-width: 425px) {
   section .carte {
     width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  section .carte {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -146,6 +151,9 @@ section svg {
 }
 
 .Commander {
+  opacity: 0;
+  animation: menu 4000ms forwards;
+  animation-delay: 1150ms;
   width: 186px;
   height: 50px;
   font-family: Roboto;
@@ -179,7 +187,9 @@ button:hover {
 }
 
 .entrees {
-  animation: menu 3000ms forwards;
+  opacity: 0;
+  animation: menu 4000ms forwards;
+  animation-delay: 250ms;
 }
 @media (max-width: 425px) {
   .entrees {
@@ -188,8 +198,9 @@ button:hover {
 }
 
 .plats {
-  animation: menu 3000ms forwards;
-  animation-delay: 250ms;
+  opacity: 0;
+  animation: menu 4000ms forwards;
+  animation-delay: 850ms;
 }
 @media (max-width: 425px) {
   .plats {
@@ -198,8 +209,9 @@ button:hover {
 }
 
 .desserts {
-  animation: menu 3000ms forwards;
-  animation-delay: 450ms;
+  opacity: 0;
+  animation: menu 4000ms forwards;
+  animation-delay: 1150ms;
 }
 @media (max-width: 425px) {
   .desserts {
@@ -242,24 +254,26 @@ label .fa-solid {
 }
 
 .toggle:checked + .fa-regular {
-  animation: heartregular 2s forwards;
+  animation: heartregular 0.5s forwards;
 }
 
 .toggle:checked + .fa-regular + .fa-solid {
-  animation: heartsolid 2s forwards;
+  animation: heartsolid 0.5s forwards;
   position: absolute;
 }
 
 .toggle:not(:checked) + .fa-regular + .fa-solid {
-  animation: reverseHeartsolid 2s forwards;
+  animation: reverseHeartsolid 0.5s forwards;
   position: absolute;
 }
 
 @keyframes menu {
   0% {
+    opacity: 0;
     transform: scale(0);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }

@@ -74,6 +74,7 @@ $purple-gradient: var(
   padding: 30px 17px 30px 18px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: $light-grey;
   @media (max-width: 375px) {
     align-items: center;
@@ -82,6 +83,7 @@ $purple-gradient: var(
     padding-right: 80px;
     padding-left: 180px;
     margin-bottom: -50px;
+    align-items: normal;
   }
 
   & h2 {
@@ -103,6 +105,8 @@ $purple-gradient: var(
     display: flex;
     gap: 50px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media (max-width: 375px) {
       align-items: center;
     }
@@ -116,11 +120,7 @@ $purple-gradient: var(
       flex-wrap: wrap;
       width: 100%;
     }
-    @media (min-width: 1024px) {
-      justify-content: center;
-    }
     @media (min-width: 1440px) {
-      justify-content: flex-start;
       gap: 0px;
     }
   }
@@ -235,17 +235,17 @@ label .fa-solid {
 }
 
 .toggle:checked + .fa-regular {
-  animation: heartregular 2s forwards;
+  animation: heartregular 0.5s forwards;
 }
 
 .toggle:checked + .fa-regular + .fa-solid {
-  animation: heartsolid 2s forwards;
+  animation: heartsolid 0.5s forwards;
   position: absolute;
   right: 2px;
 }
 
 .toggle:not(:checked) + .fa-regular + .fa-solid {
-  animation: reverseHeartsolid 5s forwards;
+  animation: reverseHeartsolid 0.5s forwards;
   position: absolute;
 }
 

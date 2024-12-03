@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oh my food</title>
+    <script
+      src="https://kit.fontawesome.com/62d1c2f4b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/accueil/header.css" />
+    <link rel="stylesheet" href="styles/accueil/fonctionnement.css" />
+    <link rel="stylesheet" href="styles/accueil/card.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/accueil/loader.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="imglogo">
+        <img
+          class="ohmyfood"
+          src="images/logo/ohmyfood-2.png"
+          alt="Logo ohmyfood"
+        />
+
+        <div class="svgfood">
+          <img
+            class="oignon"
+            src="images/SVG/onion-svgrepo-com.svg"
+            alt="Oignon"
+          />
+
+          <img
+            class="carrotte"
+            src="images/SVG/carrot-svgrepo-com.svg"
+            alt="Carrotte"
+          />
+          <img
+            class="poivron"
+            src="images/SVG/bell-pepper-svgrepo-com.svg"
+            alt="Poivron"
+          />
+        </div>
+
+        <img class="poele" src="images/SVG/pan-svgrepo-com.svg" alt="Poele" />
+        <img
+          class="buche"
+          src="images/SVG/log-nature-svgrepo-com.svg"
+          alt="Buche"
+        />
+        <img class="feux1" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux2" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux3" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+        <img class="feux4" src="images/SVG/fire-svgrepo-com.svg" alt="Feux" />
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood" />
+      </div>
+      <section class="localisation">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Paris, Belleville</p>
+      </section>
+    </header>
+    <main>
+      <section class="intro">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
+
+        <a class="button" href="#restaurants">Explorer nos restaurants</a>
+      </section>
+      <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <div class="fonct°">
+          <article>
+            <p>1</p>
+            <div class="icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Choisissez un restaurant</h3>
+          </article>
+          <article>
+            <p>2</p>
+            <div class="icon2">
+              <i class="fa-solid fa-list-ul"></i>
+            </div>
+            <h3>Composez votre menu</h3>
+          </article>
+          <article>
+            <p>3</p>
+            <div class="purple">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h3>Dégustez au restaurant</h3>
+          </article>
+        </div>
+      </section>
+      <section id="restaurants" class="cards">
+        <h2>Restaurants</h2>
+        <div class="rank-cards">
+          <article>
+            <a href="lapalette.html">
+              <img
+                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="Plat Succulent"
+            /></a>
+            <h3>Nouveau</h3>
+            <div class="card-bottom-2">
+              <a href="lapalette.html"
+                ><div class="card-word-2">
+                  <h4>La palette du goût</h4>
+                  <p>Ménilmontant</p>
+                </div></a
+              ><label class="heart-container">
+                <input type="checkbox" class="toggle" />
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+              </label>
+            </div>
+          </article>
+          <article>
+            <a href="noteenchantee.html">
+              <img
+                src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="Plat
+        succulent"
+            /></a>
+            <h3>Nouveau</h3>
+            <div class="card-bottom-2">
+              <a href="noteenchantee.html">
+                <div class="card-word-2">
+                  <h4>La note enchantée</h4>
+                  <p>Charonne</p>
+                </div></a
+              >
+              <label class="heart-container">
+                <input type="checkbox" class="toggle" />
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+              </label>
+            </div>
+          </article>
+          <article>
+            <a href="alafrançaise.html">
+              <img
+                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="Plat succulent"
+              />
+            </a>
+            <div class="card-bottom">
+              <a href="alafrançaise.html"
+                ><div class="card-word">
+                  <h4>À la française</h4>
+
+                  <p>Cité Rouge</p>
+                </div></a
+              >
+
+              <label class="heart-container">
+                <input type="checkbox" class="toggle" />
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+              </label>
+            </div>
+          </article>
+          <article>
+            <a href="ledélice.html">
+              <img
+                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Plat succulent"
+            /></a>
+            <div class="card-bottom">
+              <a href="ledélice.html"
+                ><div class="card-word">
+                  <h4>Le délice des sens</h4>
+                  <p>Folie-Méricourt</p>
+                </div></a
+              >
+              <label class="heart-container">
+                <input type="checkbox" class="toggle" />
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+              </label>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/logo/ohmyfood-2.png" alt="Logo ohmyfood" />
+      <section>
+        <div class="space">
+          <article>
+            <i class="fa-solid fa-utensils"></i>
+            <p class="footer-icon">Proposer un restaurant</p>
+          </article>
+          <article>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p class="footer-icon">Devenir partenaire</p>
+          </article>
+        </div>
+        <div class="between">
+          <article><p class="without-icon">Mentions légales</p></article>
+          <article class="mail">
+            <a href="mailto:Contact@OHMYDOOD.com?subject=Object">
+              <p class="without-icon">Contact</p></a
+            >
+          </article>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
